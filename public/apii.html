@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <body class="bg-white font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md">
+    <div class="flex items-center space-x-2">
+      <div class="text-3xl font-extrabold">RNG STORE</div>
+    </div>
+    <div class="flex-1 px-6">
+      <div class="relative max-w-md mx-auto">
+        <input type="text" placeholder="Search..." class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <span class="absolute right-3 top-2.5 text-gray-500">🔍</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="px-4 py-2 bg-red-100 text-red-500 rounded-full">Wishlist</button>
+      <a href="cart.html">
+          <button class="px-4 py-2 bg-blue-100 text-blue-500 rounded-full">Your Cart</button>
+        </a>
+        <a href="profil.html">
+  <img src="./image/6c11d28a-ec7f-44a1-aa68-a63252a9817f-removebg-preview.png" alt="Profile" class="w-10 h-10 rounded-full object-cover border border-gray-300" />
+</a>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+<main class="flex">
+<!-- Sidebar -->
+<aside class="w-64 p-6 border-r">
+  <!-- Category Filter -->
+  <div class="mb-6">
+    <h3 class="font-semibold mb-2 cursor-pointer flex justify-between items-center" onclick="toggleSection('category')">
+      Category
+      <span id="arrow-category" class="transition-transform">▼</span>
+    </h3>
+    <ul id="list-category" class="space-y-1">
+      <li>Kasual</li>
+      <li>Formal</li>
+      <li>Olahraga</li>
+      <li>Luar Ruangan</li>
+    </ul>
+  </div>
+
+  <!-- Filter By -->
+  <div class="mb-6">
+    <h3 class="font-semibold mb-2">Filter By :</h3>
+
+    <!-- Tipe Filter -->
+    <div class="mb-2">
+      <p class="font-medium cursor-pointer flex justify-between items-center" onclick="toggleSection('tipe')">
+        Tipe
+        <span id="arrow-tipe" class="transition-transform">▼</span>
+      </p>
+      <div id="list-tipe" class="flex flex-col gap-1 pl-2">
+        <label><input type="checkbox" checked /> Sepatu kets</label>
+        <label><input type="checkbox" /> Sepatu Oxford</label>
+        <label><input type="checkbox" /> Sepatu Lari</label>
+        <label><input type="checkbox" /> Sepatu Hiking</label>
+      </div>
+    </div>
+
+    <!-- Color Filter -->
+    <div class="mb-2">
+      <p class="font-medium cursor-pointer flex justify-between items-center" onclick="toggleSection('color')">
+        Color
+        <span id="arrow-color" class="transition-transform">▼</span>
+      </p>
+      <div id="list-color" class="flex flex-col gap-1 pl-2">
+        <label><input type="checkbox" /> Red</label>
+        <label><input type="checkbox" /> Black</label>
+        <label><input type="checkbox" /> Yellow</label>
+        <label><input type="checkbox" checked /> MultColor</label>
+      </div>
+    </div>
+
+    <!-- Price Filter with Range Slider -->
+    <div class="mb-4">
+      <p class="font-medium cursor-pointer flex justify-between items-center" onclick="toggleSection('price')">
+        Price
+        <span id="arrow-price" class="transition-transform">▼</span>
+      </p>
+      <div id="list-price" class="pl-2">
+        <div class="flex justify-between text-sm mb-1">
+          <span id="min-price-label">$0</span>
+          <span id="max-price-label">$100</span>
+        </div>
+        <input type="range" id="min-price" min="0" max="100" value="0" class="w-full accent-blue-500">
+        <input type="range" id="max-price" min="0" max="100" value="100" class="w-full accent-blue-500">
+      </div>
+    </div>
+
+    <!-- Size Filter Placeholder -->
+    <div class="mb-2">
+      <p class="font-medium">Size</p>
+    </div>
+
+    <div class="flex items-center space-x-2 mt-2">
+      <button class="px-4 py-2 bg-blue-500 text-white rounded">Apply</button>
+      <button class="p-2 bg-red-100 text-red-500 rounded-full" title="Reset Filters">🗑️</button>
+    </div>
+  </div>
+</aside>
+
+<!-- Products Section -->
+<section class="flex-1 p-6">
+<nav class="text-sm text-gray-600 mb-4">
+Main Page > Category > <span class="text-blue-500">Kasual</span>
+</nav>
+<h2 class="text-2xl font-bold mb-2">Kasual</h2>
+<div class="flex space-x-2 mb-4">
+<span class="bg-gray-200 px-2 py-1 rounded">Sepatu Kets</span>
+<span class="bg-gray-200 px-2 py-1 rounded">MultColor</span>
+
+
+</div>
+
+    <div id="data-product"></div>
+    <script src="api.js"></script>
+</section>
+</div>
+</body>
+</html>

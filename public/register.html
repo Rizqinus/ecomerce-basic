@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex items-center justify-center bg-white">
+
+  <div class="w-full h-screen grid grid-cols-1 md:grid-cols-2">
+    
+    <!-- Left Section: Logo -->
+    <div class="flex flex-col justify-center  bg-white p-10">
+      <h1 class="text-2xl font-semibold text-center">Create Your <br><span class="ml-64">Account</span></h1>
+      <!-- Logo -->
+      <!-- Logo -->
+      <div class="flex flex-col items-center mt-4">
+        <img src="image/Logo_R_amabalado-removebg-preview (1).png" alt="Logo R" class="w-64 h-auto mb-4" />
+        
+      </div>
+    </div>
+
+
+    <!-- Right Section: Form -->
+    <div class="bg-black text-white p-10 flex flex-col justify-center rounded-l-3xl">
+      <div class="w-full max-w-md mx-auto space-y-6">
+        <h2 class="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+
+
+        <form class="space-y-4">
+          <!-- Username -->
+          <div>
+            <label for="username" class="block mb-1">Username</label>
+            <div class="flex items-center bg-white rounded-md overflow-hidden">
+              <span class="px-3 text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5.121 17.804A9.996 9.996 0 0112 15c2.21 0 4.244.72 5.879 1.926M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </span>
+              <input type="text" id="username" placeholder="Input Username"
+                     class="w-full px-3 py-2 text-black focus:outline-none">
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label for="password" class="block mb-1">Password</label>
+            <div class="flex items-center bg-white rounded-md overflow-hidden">
+              <span class="px-3 text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3v2a2 2 0 002 2h2a2 2 0 002-2v-2z" />
+                </svg>
+              </span>
+              <input type="password" id="password" placeholder="Input Password"
+                     class="w-full px-3 py-2 text-black focus:outline-none">
+            </div>
+          </div>
+
+          <!-- Login Text -->
+          <p class="text-sm text-gray-400">Already Have Account? <a href="login.html" class="underline hover:text-blue-500">Login</a></p>
+
+          <!-- Submit Button -->
+
+  <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 py-2 rounded-md text-white font-semibold">
+    Submit
+  </button>
+        </form>
+
+        <!-- OR separator -->
+        <div class="flex items-center justify-between">
+          <hr class="w-1/3 border-gray-600">
+          <span class="text-gray-400">OR</span>
+          <hr class="w-1/3 border-gray-600">
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-4">
+          <button class="bg-white p-2 rounded-full shadow">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-6 h-6">
+          </button>
+          <button class="bg-white p-2 rounded-full shadow">
+            <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="Facebook" class="w-6 h-6">
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page - MyzStore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+ <!-- Header -->
+  <header class="bg-cyan-700 text-white px-6 py-4">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold">Myz</h1>
+
+      <!-- Menu -->
+      <nav class="flex gap-6 text-lg font-medium">
+        <a href="#" class="hover:underline">Pria</a>
+        <a href="#" class="hover:underline">Wanita</a>
+        <a href="#" class="hover:underline">Anak</a>
+        <a href="./home.html" class="bg-white text-teal-700 px-4 py-1 rounded-full font-semibold">Home</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <div class="flex items-center bg-white rounded-full px-4 py-2 w-full max-w-md">
+        <input
+          type="text"
+          placeholder="Search Produk"
+          class="flex-1 bg-transparent text-black placeholder-black-700 focus:outline-none"
+        />
+        <button class="text-white font-semibold ml-2">Search</button>
+      </div>
+<div class="space-x-4">
+        <a href="./home.html">
+        <button class="bg-white text-[#0f4c5c] px-4 py-2 rounded hover:bg-gray-100">Login</button>
+        </a>
+        <a href="./buatakun.html">
+        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Register</button>
+        </a>
+      </div>
+      </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between p-6 md:p-16 bg-white shadow-md">
+    <div class="md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di <span class="text-blue-600">MyzStore</span></h1>
+      <p class="text-lg mb-6">Temukan produk terbaik dengan harga terjangkau, kualitas terpercaya, dan pengiriman cepat!</p>
+      <a href="#produk" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Lihat Produk</a>
+    </div>
+    <div class="md:w-1/2">
+      <img src="../public/image/6c11d28a-ec7f-44a1-aa68-a63252a9817f-removebg-preview.png" alt="Banner Image" class="rounded-xl shadow-lg w-50 object-cover" />
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="p-6 md:p-16 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-8 text-center">Produk Unggulan</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Kartu Produk -->
+      <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/300x200/?product" alt="Produk" class="rounded-md mb-4 w-full h-40 object-cover"/>
+        <h3 class="text-lg font-semibold">Nama Produk</h3>
+        <p class="text-gray-600 mb-2">Deskripsi singkat produk ini...</p>
+        <span class="text-blue-600 font-bold text-lg">Rp199.000</span>
+        <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Beli Sekarang</button>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/300x200/?product,tech" alt="Produk" class="rounded-md mb-4 w-full h-40 object-cover"/>
+        <h3 class="text-lg font-semibold">Produk Teknologi</h3>
+        <p class="text-gray-600 mb-2">Deskripsi singkat...</p>
+        <span class="text-blue-600 font-bold text-lg">Rp299.000</span>
+        <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Beli Sekarang</button>
+      </div>
+      <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/300x200/?fashion" alt="Produk" class="rounded-md mb-4 w-full h-40 object-cover"/>
+        <h3 class="text-lg font-semibold">Fashion Item</h3>
+        <p class="text-gray-600 mb-2">Deskripsi singkat fashion...</p>
+        <span class="text-blue-600 font-bold text-lg">Rp149.000</span>
+        <button class="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #222; color: #eee; padding: 40px 20px; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- About -->
+      <div style="flex: 1 1 200px; margin: 10px;">
+        <h3>MyzStore</h3>
+        <p>Your trusted ecommerce store for quality products.</p>
+      </div>
+      <!-- Quick Links -->
+      <div style="flex: 1 1 150px; margin: 10px;">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#" style="color: #eee; text-decoration: none;">Home</a></li>
+          <li><a href="#" style="color: #eee; text-decoration: none;">Shop</a></li>
+          <li><a href="#" style="color: #eee; text-decoration: none;">About Us</a></li>
+          <li><a href="#" style="color: #eee; text-decoration: none;">Contact</a></li>
+          <li><a href="#" style="color: #eee; text-decoration: none;">FAQ</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div style="flex: 1 1 200px; margin: 10px;">
+        <h4>Contact Us</h4>
+        <p>Email: Acumalaka005@gmail.com</p>
+        <p>Phone: ‪+62 813 8554 0251‬</p>
+        <p>Address: Jl. Ngawi Selatan, Bogor</p>
+      </div>
+      <!-- Social Media -->
+      <div style="flex: 1 1 150px; margin: 10px;">
+        <h4>Follow Us</h4>
+        <p>
+          <a href="https://www.facebook.com/share/19PFEeFNqP/" style="color: #eee; margin-right: 10px;">Facebook</a> |
+          <a href="https://www.instagram.com/itoshimyz?igsh=MWtoYnd1aWU3MTM0YQ==" style="color: #eee; margin: 0 10px;">Instagram</a> |
+          <a href="https://x.com/MyzYura" style="color: #eee; margin-left: 10px;">Twitter</a>
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #aaa;">
+      &copy; 2025 MyzStore. All rights reserved.
+    </div>
+  </footer>
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
